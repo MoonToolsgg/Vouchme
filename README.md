@@ -6,7 +6,7 @@
   
 <h2> Features</h2>
 
-Here're some of the project's best features:
+# Commands:
 
 *   /vouch (vouch message) (stars rated) (optional image proof)
 *   /backup\_vouches
