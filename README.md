@@ -20,7 +20,7 @@ Here're some of the project's best features:
 <p>2. install requirements</p>
 
 ```
-pip install discord.py colorama pystyle
+pip install -r requirements.txt
 ```
 
 <p>3. create a discord application and give it all 3 intents and copy its token</p>
