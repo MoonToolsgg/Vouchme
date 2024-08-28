@@ -2,10 +2,6 @@
 
 <p id="description">Discord Bot Made For Servers Who Use User Vouches For Proofs This Is A Basic Project Made In Python In Discord.py And You Can Restore The Vouches If The Channel Gets Deleted Or Server Gets Termed.</p>
 
-  
-  
-<h2> Features</h2>
-
 # Commands:
 
 *   /vouch (vouch message) (stars rated) (optional image proof)
