@@ -4,7 +4,7 @@
 
 # Picture:
 
-![Picture](https://imgur.com/a/wGkaH0J)
+![Picture](https://i.imgur.com/rbcLVGi.png)
 
 
 # Commands:
