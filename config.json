@@ -1,0 +1,9 @@
+{
+    "bot_token": "",
+    "guild_id": "",
+    "admin_role": "",
+    "vouch_command_channel": "",
+    "backup_command_channel": "",
+    "status": "dsc.gg/nyxtools",
+    "embed_color": "magenta"
+}

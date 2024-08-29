@@ -1,0 +1,5 @@
+discord.py
+py-cord
+pycord
+pystyle
+colorama
