@@ -2,7 +2,7 @@
 
 <p id="description">Discord Bot Made For Servers Who Use User Vouches For Proofs This Is A Basic Project Made In PythonAnd You Can Restore The Vouches If The Channel Gets Deleted Or Server Gets Termed.</p>
 
-# Picture:
+# Screenshot:
 
 ![Picture](https://i.imgur.com/rbcLVGi.png)
 
