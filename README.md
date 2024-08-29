@@ -4,7 +4,8 @@
 
 # Picture:
 
-https://imgur.com/a/wGkaH0J
+![Picture](https://imgur.com/a/wGkaH0J)
+
 
 # Commands:
 *   /vouch (vouch message) (stars rated) (optional image proof)
