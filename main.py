@@ -51,7 +51,7 @@ bot = discord.Bot(command_prefix="/", activity=activity, status=discord.Status.o
 async def on_ready():
    print(Fore.WHITE + "\n[" + Fore.GREEN + "+" + Fore.WHITE + "]" + Fore.MAGENTA + f" Logged in as {bot.user}")
 
-@bot.slash_command(name='vouch',stars= int,description='Give a vouch to someone!', guild_ids=[int(config['guild_id'])])
+@bot.slash_command(name='vouch',description='Give a vouch to someone!', guild_ids=[int(config['guild_id'])])
 async def vouch(ctx,message: str,stars = discord.Option(str, "select how many stars", choices=['⭐⭐⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐', '⭐']),attachment = discord.Option(discord.Attachment, "upload image/video proof", required=False)):
     global vouch_count
     
