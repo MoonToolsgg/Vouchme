@@ -30,3 +30,6 @@
 <p>4. open config.json and put your config</p>
 
 <p>5. run start.bat</p>
+
+# help us improve:
+if you have a idea or a command you think is good please dont hesitate to do a pull!
