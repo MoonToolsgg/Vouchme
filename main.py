@@ -9,7 +9,6 @@ import ctypes
 
 config = json.load(open("config.json", encoding="utf-8"))
 init()
-side_color = config['embed_color']
 def clear():
     if os.name == "nt":
         os.system("cls")
@@ -22,28 +21,9 @@ def title():
     else:
         os.system("title back up my vouches")
 
-def get_embed_color(color_name):
-    color_map = {
-    "blurple": discord.Color.blurple(),
-    "red": discord.Color.red(),
-    "green": discord.Color.green(),
-    "blue": discord.Color.blue(),
-    "purple": discord.Color.purple(),
-    "magenta": discord.Color.magenta(),
-    "orange": discord.Color.orange(),
-    "teal": discord.Color.teal(),
-    "gold": discord.Color.gold(),
-    "greyple": discord.Color.greyple(),
-    "dark_theme": discord.Color.dark_theme(),
-    "dark_blue": discord.Color.dark_blue(),
-    "dark_green": discord.Color.dark_green(),
-    "dark_red": discord.Color.dark_red(),
-    "dark_purple": discord.Color.dark_purple(),
-    "dark_magenta": discord.Color.dark_magenta(),
-    }
-    return color_map.get(color_name, discord.Color.default())
-
 vouch_count = 1
+
+embed_color = int(config['hex_embed_color'], 16)
 activity = discord.Activity(type=discord.ActivityType.playing, name=config['status'])
 bot = discord.Bot(command_prefix="/", activity=activity, status=discord.Status.online, intents=discord.Intents.all())
 
@@ -51,7 +31,7 @@ bot = discord.Bot(command_prefix="/", activity=activity, status=discord.Status.o
 async def on_ready():
    print(Fore.WHITE + "\n[" + Fore.GREEN + "+" + Fore.WHITE + "]" + Fore.MAGENTA + f" Logged in as {bot.user}")
 
-@bot.slash_command(name='vouch',description='Give a vouch to someone!', guild_ids=[int(config['guild_id'])])
+@bot.slash_command(name='vouch',stars= int,description='Give a vouch to someone!', guild_ids=[int(config['guild_id'])])
 async def vouch(ctx,message: str,stars = discord.Option(str, "select how many stars", choices=['⭐⭐⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐', '⭐']),attachment = discord.Option(discord.Attachment, "upload image/video proof", required=False)):
     global vouch_count
     
@@ -63,9 +43,8 @@ async def vouch(ctx,message: str,stars = discord.Option(str, "select how many st
     user = ctx.user
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     stars_count = stars.count('⭐')
-    embed_color = get_embed_color(config['embed_color'])
 
-    embed = discord.Embed(title="NYX Vouches", color=embed_color)
+    embed = discord.Embed(title="New Vouch Created!", color=embed_color)
     embed.add_field(name="Vouch:", value=message, inline=False)
     embed.add_field(name="Stars:", value=stars, inline=False)
     embed.add_field(name="Vouched by:", value=f"{user.mention}", inline=True)
@@ -110,8 +89,8 @@ async def backupvouches(ctx):
         with open(f'vouches/{filename}', 'r') as f:
             vouch = json.load(f)
             stars_display = '⭐' * vouch['stars']
-            embed_color = get_embed_color(config['embed_color'])
-            embed = discord.Embed(title="NYX Vouches", color=embed_color)
+            embed_color = embed_color)
+            embed = discord.Embed(title="Backed Up Vouch!", color=embed_color)
             embed.add_field(name="Vouch:", value=vouch['vouch'], inline=False)
             embed.add_field(name="Stars:", value=stars_display, inline=False)
             embed.add_field(name="Vouched by:", value=f"{vouch['vouched_by_name']}", inline=True)
