@@ -14,7 +14,7 @@
 # Goals:
 15 stars ❌ (update to the bot by adding more commands)
 
-25 stars ❌ (update to the bot to make it more professional and esthetic)
+25 stars ❌ (update to the bot to make it more professional)
 
 50 stars ❌ (update so you can view all your vouches in localhost)
 
