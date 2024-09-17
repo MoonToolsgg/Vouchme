@@ -89,7 +89,6 @@ async def backupvouches(ctx):
         with open(f'vouches/{filename}', 'r') as f:
             vouch = json.load(f)
             stars_display = '⭐' * vouch['stars']
-            embed_color = embed_color)
             embed = discord.Embed(title="Backed Up Vouch!", color=embed_color)
             embed.add_field(name="Vouch:", value=vouch['vouch'], inline=False)
             embed.add_field(name="Stars:", value=stars_display, inline=False)
