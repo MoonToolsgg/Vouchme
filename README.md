@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Back Up My Vouches Bot</h1>
+<h1 align="center" id="title">Vouch me</h1>
 
 <p id="description">Discord Bot Made For Servers Who Use User Vouches For Proofs This Is A Basic Project Made In Python And You Can Restore The Vouches If The Channel Gets Deleted Or Server Gets Termed.</p>
 
@@ -9,7 +9,7 @@
 
 # Commands:
 *   /vouch (vouch message) (stars rated) (optional image proof)
-*   /backup\_vouches
+*   /backupvouches
 
 # Goals:
 15 stars ❌ (update to the bot by adding more commands)
@@ -17,6 +17,8 @@
 25 stars ❌ (update to the bot to make it more professional)
 
 50 stars ❌ (update so you can view all your vouches in localhost)
+
+(no need cuz i already added so you can see all your vouches in localhost and updated the commands so it looks more like myvouches)
 
 
 <h2>Installation:</h2>
