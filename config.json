@@ -4,6 +4,8 @@
     "admin_role": "",
     "vouch_command_channel": "",
     "backup_command_channel": "",
-    "status": "dsc.gg/nyxtools",
-    "hex_embed_color": "CA00CC"
+    "status": ".gg/multiboosts #1 provider",
+    "hex_embed_color": "01e8ff",
+    "support_server": "https://discord.gg/bnJJRVZn4N",
+    "footer_text": "thank you for leaving a vouch"
 }
